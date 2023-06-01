@@ -1,0 +1,295 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.carousel-container {
+    position: relative;
+    height: calc(
+        100% - 56px
+    ); /* Ajuste conforme a altura da barra de navegação */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 690px; /* Ajuste a altura conforme desejado */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* Suporte para navegadores WebKit */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 7rem;
+    z-index: 1; /* Para garantir que a barra de navegação esteja acima do conteúdo */
+    background-color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand {
+    padding: 3.5rem 7rem;
+}
+.navbar-logo {
+    margin-right: auto;
+}
+
+.navbar-logo img {
+    height: 100px;
+    width: auto;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 38px;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar li {
+        width: 100%;
+        /* float: none; */
+    }
+
+    .navbar li a {
+        text-align: center;
+    }
+}
+
+.content {
+    min-height: 100%;
+    margin-bottom: -100px; /* Altura negativa igual à altura do footer */
+}
+
+.footer {
+    background-color: #ffe4c4;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left,
+.footer-right {
+    width: 50%;
+}
+.image-section {
+    width: 100%;
+    height: 500px;
+    background-color: #ffe4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.image-container {
+    position: relative;
+    display: contents;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -220px;
+}
+img {
+    width: 100%;
+    /height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Remove o espaçamento extra abaixo da imagem */
+    max-width: 100%; /* Define a largura máxima da imagem como 100% do elemento pai */
+    border-radius: 10px; /* Adiciona borda arredondada à imagem */
+    margin: 10px auto; /* Centraliza a imagem horizontalmente com margens superior e inferior de 10px */
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+.custom-navbar {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 228, 196, 0.8);
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: black;
+    transition: color 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #d2691e; /* Define a cor do link ao passar o mouse */
+}
+
+.imagem-destaque {
+    position: relative;
+    height: 100vh; /* Define a altura da seção de destaque */
+    background-image: url("img/salao.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    margin-top: 29%;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+    transform: rotate(360deg);
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+}
+.image-effect {
+    transition: transform 0.3s ease;
+}
+
+.image-effect:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+h1 {
+    display: block;
+    font-size: 5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.text-center {
+    margin-top: 0;
+}
+.overlay-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+}
+h4 {
+    display: block;
+    font-size: 5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #000000;
+}
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    z-index: 9999;
+}
+
+#scrollToTopButton:hover {
+    background-color: #333;
+}
+@keyframes underline-anim {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.underline-animation {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-animation::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    animation: underline-anim 1s forwards;
+}
